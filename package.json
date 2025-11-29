@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:check": "npm run build && test -f dist/index.html && echo 'Build verification passed!' || (echo 'Build failed: index.html not found' && exit 1)",
     "preview": "vite preview",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
