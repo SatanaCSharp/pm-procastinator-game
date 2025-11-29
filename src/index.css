@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
-/* Глобальні налаштування теми */
 @theme {
     --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Глобальні налаштування для тіла сторінки */
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,7 +12,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* Темний фон, щоб відповідати темі гри */
     background-color: #fff;
     color: #f3f4f6;
 }
@@ -24,7 +21,6 @@ code {
     monospace;
 }
 
-/* Анімації */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
